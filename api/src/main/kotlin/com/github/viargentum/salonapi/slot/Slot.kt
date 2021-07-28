@@ -1,7 +1,8 @@
-package com.github.viargentum.salonapi.data
+package com.github.viargentum.salonapi.slot
 
 import com.fasterxml.jackson.annotation.JsonIgnore
-import java.util.Date
+import com.github.viargentum.salonapi.salonservice.SalonServiceDetail
+import java.util.*
 import javax.persistence.*
 
 @Entity
@@ -17,16 +18,15 @@ data class Slot(
     @ManyToOne
     private val selectedService: SalonServiceDetail,
 
-    val stylistName: String,
-    val slotFor: Date,
-
     private val status: SlotStatus,
 
+    val stylistName: String,
+    val slotFor: Date,
     val lockedAt: Date,
     val confirmedAt: Date,
 )
 
-enum class SlotStatus{
+enum class SlotStatus {
     AVAILABLE,
     LOCKED,
     CONFIRMED,

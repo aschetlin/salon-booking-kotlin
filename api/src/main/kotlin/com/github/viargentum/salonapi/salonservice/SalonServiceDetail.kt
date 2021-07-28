@@ -1,4 +1,4 @@
-package com.github.viargentum.salonapi.data
+package com.github.viargentum.salonapi.salonservice
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

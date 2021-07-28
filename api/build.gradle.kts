@@ -37,8 +37,7 @@ dependencies {
 
 	runtimeOnly("org.postgresql:postgresql")
 
-	implementation("io.springfox:springfox-swagger-ui")
-	implementation("io.springfox:springfox-swagger2")
+	implementation("io.springfox:springfox-swagger-ui:3.0.0")
 }
 
 tasks.withType<KotlinCompile> {
