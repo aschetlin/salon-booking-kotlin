@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container className="justify-content-center">
+        <Container style={{ marginLeft: 0, marginRight: 0 }}>
           <Navbar.Brand href="#home">
             AR Salon and Day Spa Services
           </Navbar.Brand>
